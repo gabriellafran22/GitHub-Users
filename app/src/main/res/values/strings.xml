@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GitHub User Submission 3</string>
+    <string name="github_user_profile">GitHub User Profile</string>
+    <string name="github_users">GitHub Users</string>
+    <string name="github_logo">GitHub Logo</string>
+
+    <string name="user_profile_picture">User Profile Picture</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="search">Search GitHub User</string>
+    <string name="username">@%s</string>
+    <string name="repositories">Public Repositories:</string>
+    <string name="company">Company:</string>
+    <string name="location">Location:</string>
+    <string name="checkout_github_account">Checkout GitHub account</string>
+    <string name="fullName">Full Name</string>
+    <string name="companyName">company Name</string>
+    <string name="locationName">Location name</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="settings">settings</string>
+    <string name="dark_mode">Dark Mode</string>
+
+    <string name="favorite_users">Favorite Users</string>
+    <string name="no_favorite_users">No favorite users</string>
+    <string name="add_favorite_success">Berhasil menambahkan %s ke favorites</string>
+    <string name="delete_favorite_success">Berhasil menghapus %s dari favorites</string>
+
+</resources>

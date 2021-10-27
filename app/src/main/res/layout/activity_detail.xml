@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SetBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_detail_profilePicture"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/user_profile_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_detail_name"
+        style="@style/TextTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tv_detail_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_detail_profilePicture"
+        tools:text="@string/fullName" />
+
+    <TextView
+        android:id="@+id/tv_detail_username"
+        style="@style/TextUnderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/tv_detail_company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_name"
+        tools:text="@string/username" />
+
+    <TextView
+        android:id="@+id/tv_detail_company"
+        style="@style/TextUnderTitle.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/company"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_detail_companyName"
+        app:layout_constraintEnd_toStartOf="@id/tv_detail_companyName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_detail_companyName" />
+
+    <TextView
+        android:id="@+id/tv_detail_companyName"
+        style="@style/TextUnderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@id/tv_detail_locationName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_detail_company"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_username"
+        tools:text="@string/companyName" />
+
+    <TextView
+        android:id="@+id/tv_detail_location"
+        style="@style/TextUnderTitle.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        app:layout_constraintBottom_toBottomOf="@id/tv_detail_locationName"
+        app:layout_constraintEnd_toStartOf="@+id/tv_detail_locationName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_detail_locationName" />
+
+    <TextView
+        android:id="@+id/tv_detail_locationName"
+        style="@style/TextUnderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@id/tv_detail_repositoriesNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_location"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_companyName"
+        tools:text="@string/locationName" />
+
+    <TextView
+        android:id="@+id/tv_detail_repositories"
+        style="@style/TextUnderTitle.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/repositories"
+        app:layout_constraintBottom_toBottomOf="@id/tv_detail_repositoriesNumber"
+        app:layout_constraintEnd_toStartOf="@id/tv_detail_repositoriesNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_detail_repositoriesNumber" />
+
+    <TextView
+        android:id="@+id/tv_detail_repositoriesNumber"
+        style="@style/TextUnderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@id/btn_detail_checkoutGitHubAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_repositories"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_locationName"
+        tools:text="200" />
+
+    <Button
+        android:id="@+id/btn_detail_checkoutGitHubAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        style="@style/ButtonColorBackground"
+        android:text="@string/checkout_github_account"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        app:layout_constraintEnd_toStartOf="@+id/btn_detail_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_repositoriesNumber" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_detail_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_detail_checkoutGitHubAccount"
+        app:layout_constraintTop_toTopOf="@+id/btn_detail_checkoutGitHubAccount"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24_black" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_detail_checkoutGitHubAccount"
+        app:tabIndicatorColor="@color/white"
+        app:tabTextColor="@android:color/white" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
