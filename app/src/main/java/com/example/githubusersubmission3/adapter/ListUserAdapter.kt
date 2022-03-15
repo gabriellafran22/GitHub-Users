@@ -1,13 +1,9 @@
 package com.example.githubusersubmission3.adapter
 
-import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.res.ResourcesCompat.getColor
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.githubusersubmission3.R
 import com.example.githubusersubmission3.api.UserResponse
 import com.example.githubusersubmission3.databinding.ItemRowUserBinding
 

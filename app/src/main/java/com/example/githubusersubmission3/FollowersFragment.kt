@@ -75,7 +75,6 @@ class FollowersFragment() : Fragment() {
                 intent.putExtra(DetailActivity.EXTRA_USER, data.login)
                 intent.putExtra(DetailActivity.EXTRA_AVATAR, data.avatarUrl)
                 startActivity(intent)
-
             }
 
         })
